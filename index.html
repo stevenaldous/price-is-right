@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Price is Right!</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+ 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/style" href="css/style.css">
+	<script src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+<nav id="navBar" class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav navbar-right">
+      		<li><a href="#">Play</a></li>
+        	<li><a href="#">Player 2</a></li>
+        	<li><a href="#">Player 1</a></li>
+        	<li><a href="#">How to Play</a></li>
+      </ul>
+ 	</div>	
+</nav>    <!-- end of navbar -->
+<img id="logo" src="http://i.imgur.com/6UCFhtV.png"/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="showcase" class="col-md-6 col-md-offset-3">
+			</div>
+
+			<div id="reveal" class="col-md-2 col-md-offset-1" >
+				<h4>The price is...</h4>
+			</div>
+		</div>
+	</div>   <!-- end of row -->
+	<div  class="row">
+		<div id ="player-input" class="col-md-12">
+	  		<div class="col-md-3 col-md-offset-2">
+	  		  <div class="input-group">
+	  		    <span class="input-group-btn">
+	  		      <button class="btn btn-danger" type="button">Go!</button>
+	  		    </span>
+	  		    <input type="text" class="form-control" placeholder="The price is...">
+	  		  </div><!-- /input-group -->
+	  		</div><!-- end player 1 -->
+	  		<div class="col-md-1 col-md-offset-1">
+	  			<button class="btn btn-warning" type="button">Next!</button>
+	  		</div>	
+	  		<div class="col-md-3 col-md-offset-1" >
+	  		  <div class="input-group">
+	  		    <input type="text" class="form-control" placeholder="The price is...">
+	  		    <span class="input-group-btn">
+	  		      <button class="btn btn-danger" type="button">Go!</button>
+	  		    </span>
+	  		  </div><!-- /input-group -->
+	  		</div><!-- end player2  -->
+	  </div>
+	</div><!-- /.row -->
+</div> <!-- End of container div -->
+</body>
+</html>
