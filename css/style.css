@@ -1,9 +1,6 @@
 body{
-
 	background-image: url("http://i.imgur.com/Krc5vOo.jpg");
 	font-family: 'Squada One', cursive;
-	
-
 }
 #navBar{
 	position: relative;
@@ -42,4 +39,7 @@ body{
 	position: relative;
 	margin-top: 20px;
 	
+}
+button{
+	border: none;
 }
