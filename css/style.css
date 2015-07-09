@@ -1,3 +1,10 @@
+/*@font-face{
+	font-family: 'Pricedown';
+	src: url('larabiefonts.com/');
+	font-weight: bold;
+}
+*/
+
 body{
 	background-image: url("http://i.imgur.com/Krc5vOo.jpg");
 	font-family: 'Squada One', cursive;
@@ -8,7 +15,7 @@ body{
 	color: #F35900;
 	height: 40px;
 	float-right;
-	z-index: -10;
+	z-index: 0;
 	font-size: 25px;
 	border-bottom: solid 5px #FFF900
 }
@@ -17,7 +24,7 @@ body{
 	margin-top: -60px;
 	margin-left: 20px;
 	width: 250px;
-	z-index: 10;
+	z-index: 400;
 }
 #showcase{
 	background-color: #FFFFFF;
@@ -27,19 +34,50 @@ body{
 	border: solid 5px #C1111A;
 	font-size: 30px;
 }
+#product-name{
+	color: #F35900;
+	height: 50px;
+	border-radius: 40px;
+	margin-top: 5px;
+	text-align: center;
+}
+#product-image{
+	height: 330px;
+	border-radius: 20px;
+	text-align: center;
+
+}
 #reveal{
 	background-color: #FFFFFF;
 	color: #646464;
-	min-height: 150px;
+	min-height: 100px;
 	border-radius: 30px;
 	border: solid 5px #F35900;
 	margin-top: 100px;
+
 }
+#product-price{
+	border-radius: 20px;
+	margin-top: 10px;
+	/*margin-left: 20px;*/
+	height: 80px;
+	width: 80px;
+	color: #F35900;
+	font-size: 50px;
+	text-align: left;
+}
+
 #player-input{
 	position: relative;
 	margin-top: 20px;
 	
 }
+/*#dollar-sign{
+	font-family: 'pricedown';
+	font-size: 200px;
+	color: #FFF815;
+
+}*/
 button{
 	border: none;
 }
