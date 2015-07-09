@@ -19,11 +19,12 @@
 <nav id="navBar" class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<ul class="nav navbar-nav navbar-right">
-      		<li><a href="#">Play</a></li>
         	<li><a href="#">Player 2</a></li>
         	<li><a href="#">Player 1</a></li>
-        	<li><a href="#">How to Play</a></li>
+        	<li><a id="play-button" href="#" role="button">Play</a></li>
+        	<li><a id="play-button" href="#" role="button">How to Play</a></li>
       </ul>
+      </form>
  	</div>	
 </nav>    <!-- end of navbar -->
 <img id="logo" src="http://i.imgur.com/6UCFhtV.png"/>
@@ -31,10 +32,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div id="showcase" class="col-md-6 col-md-offset-3">
+				<span id="product-name"></span>
 			</div>
 
 			<div id="reveal" class="col-md-2 col-md-offset-1" >
-				<h4>The price is...</h4>
+				<span id="price"></span>
 			</div>
 		</div>
 	</div>   <!-- end of row -->
@@ -43,19 +45,19 @@
 	  		<div class="col-md-3 col-md-offset-2">
 	  		  <div class="input-group">
 	  		    <span class="input-group-btn">
-	  		      <button class="btn btn-danger" type="button">Go!</button>
+	  		      <button id="plyr1-btn" class="btn btn-danger" type="submit">Go!</button>
 	  		    </span>
 	  		    <input type="text" class="form-control" placeholder="The price is...">
 	  		  </div><!-- /input-group -->
 	  		</div><!-- end player 1 -->
 	  		<div class="col-md-1 col-md-offset-1">
-	  			<button class="btn btn-warning" type="button">Next!</button>
+	  			<button id="next-button"class="btn btn-warning" type="button">Next!</button>
 	  		</div>	
 	  		<div class="col-md-3 col-md-offset-1" >
 	  		  <div class="input-group">
 	  		    <input type="text" class="form-control" placeholder="The price is...">
 	  		    <span class="input-group-btn">
-	  		      <button class="btn btn-danger" type="button">Go!</button>
+	  		      <button id="plyr2-btn" class="btn btn-danger" type="button">Go!</button>
 	  		    </span>
 	  		  </div><!-- /input-group -->
 	  		</div><!-- end player2  -->

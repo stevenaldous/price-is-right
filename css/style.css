@@ -1,9 +1,6 @@
 body{
-
 	background-image: url("http://i.imgur.com/Krc5vOo.jpg");
 	font-family: 'Squada One', cursive;
-	
-
 }
 #navBar{
 	position: relative;
@@ -13,6 +10,7 @@ body{
 	float-right;
 	z-index: -10;
 	font-size: 25px;
+	border-bottom: solid 5px #FFF900
 }
 #logo{
 	position: fixed;
@@ -22,20 +20,25 @@ body{
 	z-index: 10;
 }
 #showcase{
-	background-color: #000000;
+	background-color: #FFFFFF;
+	color: #646464;
 	min-height: 400px;
 	border-radius: 40px;
+	border: solid 5px #C1111A;
 	font-size: 30px;
 }
 #reveal{
-	color: #FFFFFF;
-	background-color: #000000;
+	background-color: #FFFFFF;
+	color: #646464;
 	min-height: 150px;
 	border-radius: 30px;
+	border: solid 5px #F35900;
 	margin-top: 100px;
 }
 #player-input{
 	position: relative;
-	margin-top: 20px;
-	
+	margin-top: 20px;	
+}
+button{
+	border: none;
 }
