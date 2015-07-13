@@ -1,10 +1,3 @@
-/*@font-face{
-	font-family: 'Pricedown';
-	src: url('larabiefonts.com/');
-	font-weight: bold;
-}
-*/
-
 body{
 	background-image: url("http://i.imgur.com/Krc5vOo.jpg");
 	font-family: 'Squada One', cursive;
@@ -12,13 +5,29 @@ body{
 #navBar{
 	position: relative;
 	background-color: #FFFFFF;
-	color: #F35900;
+	color: #6F6F6F;
 	height: 40px;
 	float-right;
 	z-index: 0;
 	font-size: 25px;
-	border-bottom: solid 5px #FFF900
+	border-bottom: solid 5px #FFF900;
 }
+.scoreboard{
+	margin-top: 6px;
+	margin-left: 10px;
+	color: #6F6F6F;
+}
+.score{
+	text-align: center;
+	color: #C1111A;
+	padding-bottom: 15px;
+	border: solid 1px #F35900;
+	background-color: #FFF900;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+}
+
 #logo{
 	position: fixed;
 	margin-top: -60px;
@@ -47,9 +56,14 @@ body{
 	text-align: center;
 
 }
+#opening-image{
+	text-align: center;
+	border-radius: 40px;
+	margin-left: -10px;
+}
 #reveal{
-	background-color: #FFFFFF;
-	color: #646464;
+	background-color: #FFF900;
+	color: #45C74E;
 	min-height: 100px;
 	border-radius: 30px;
 	border: solid 5px #F35900;
@@ -59,25 +73,16 @@ body{
 #product-price{
 	border-radius: 20px;
 	margin-top: 10px;
-	/*margin-left: 20px;*/
 	height: 80px;
 	width: 80px;
-	color: #F35900;
-	font-size: 50px;
+	font-size: 45px;
 	text-align: left;
 }
-
 #player-input{
 	position: relative;
 	margin-top: 20px;
 	
 }
-/*#dollar-sign{
-	font-family: 'pricedown';
-	font-size: 200px;
-	color: #FFF815;
-
-}*/
 button{
 	border: none;
 }

@@ -9,7 +9,11 @@
  	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
  	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+  	<link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css">
 	<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.color.js"></script>
 	<link rel="stylesheet" type="text/style" href="css/style.css">
 	<script src="js/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,48 +24,68 @@
 	<div class="container-fluid">
 		<ul class="nav navbar-nav navbar-right">
 			<li id="new-game"><a  href="#" >New Game</a></li>
-			<li><a href="#">Player 1</a></li>
-        	<li id="1-score"></li>
-        	<li><a href="#">Player 2</a></li>
-        	<li id="2-score"></li>
-        	<li><a id="how-to" href="#" role="button">How to Play</a></li>
+			<li class="scoreboard">Player 1</li>
+        	<li id="1-score"  class="scoreboard score"></li>
+        	<li class="scoreboard">Player 2</li>
+        	<li id="2-score" class="scoreboard score"></li>
+        	<li><a id="how-to" href="#" data-toggle="modal" data-target="#how-to-play">How to Play</a></li>
+        	<!-- <li><a id="play-theme" class="glyphicon glyphicon-volume-up" href="#"></a></li> -->
       </ul>
  	</div>	
 </nav>    <!-- end of navbar -->
+<!-- Modl begins -->
+<div class="modal fade" id="how-to-play" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">How to play the Price Is Right!</h4>
+      </div>
+      <div class="modal-body">
+      	<h4>Game Rules</h4>
+      		<p>A Fabulous product wil present itself and you will have to decide what the price is. To keep things simple we are looking for the original Manufacturer Suggested Retail Price.</p>
+      		<ul>
+      			<li>In order to win you must be the closest to the correct price <strong>without</strong>going over.</li>
+      			<li>Once both PLayers have entered their prices press the <strong>GO!</strong> button.</li>
+      			<li>We will compare your answers and assign a point to the round winner.</li>
+      			<li>Press the <strong>Next!</strong> button to bring up the next product.</li>
+      			<li>First player to reach 10 correct answers wins! </li>
+
+    		</ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Let's Play!</button>
+      </div>
+    </div>
+  </div>
+</div>   <!-- end of how to play modal -->
 <img id="logo" src="http://i.imgur.com/6UCFhtV.png"/>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<div id="showcase" class="col-md-6 col-md-offset-3">
+
 				<div id="product-name"></div>
-				<div id="product-image"></div>
+				<div id="product-image">
+				<img id="opening-image" src="http://i.imgur.com/9Gp0gYn.jpg" />
+				</div>
 			</div>
 			<div id="reveal" class="col-md-2 col-md-offset-1" >
-			<!-- 	<span id="dollar-sign">$</span> -->
 				<div id="product-price">
 				</div>	
 			</div>
 		</div>
 	</div>   <!-- end of row -->
-	<div  class="row">
-		<div id ="player-input" class="col-md-12">
-		<span>
-	  		<div id="pedastal" class="col-md-3 col-md-offset-3">
-	  		  <div class="input-group">
-	  		    <input id ="plyr1Input" type="text" class="form-control" placeholder="The price is...">
-	  		  </div><!-- /input-group -->
-	  		</div><!-- end player 1 -->
-	  		<div class="col-md-1" id='swap'>
-	  			<button id="go-button" class="btn btn-danger" type="button">GO!</button>
-	  		</div>	
-	  		<div class="col-md-3" >
-	  		 	 <div class="input-group">
-	  		    	<input id ="plyr2Input" type="text" class="form-control" placeholder="The price is...">
-	  		  	</div><!-- /input-group -->
-	  		</div><!-- end player2  -->
-	  		</span>
-	  </div>
-	</div><!-- /.row -->
+	<div class="row">
+  <div id ="player-input" class="col-md-4 col-md-offset-4">
+    <div class="input-group">
+    <input id ="plyr1Input" type="text" class="form-control" placeholder="The price is...">
+      <span id="swap" class="input-group-btn">
+        <button id="go-button" class="btn btn-danger" type="button">Go!</button>
+      </span>
+      <input id ="plyr2Input" type="text" class="form-control" placeholder="The price is...">
+    </div><!-- /input-group -->
+    </div>
 </div> <!-- End of container div -->
 </body>
 </html>
