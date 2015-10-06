@@ -23,8 +23,8 @@ $(function(){
                  return;
         } else {
             if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
-                event.preventDefault(); 
-               }   
+                event.preventDefault();
+               }
         }
 	});
 
@@ -70,8 +70,8 @@ $(function(){
 		{photo: 'http://i.imgur.com/9gD59MS.jpg', desc:'Raleigh Record Ace Road Bike' ,price: 1900},
 		{photo: 'http://i.imgur.com/dtOPODZ.jpg', desc:'BCA Tracker DTS Rescue Package 2015' ,price: 319.95},
 		{photo: 'http://i.imgur.com/rY0RU0v.jpg', desc:'Sorel Joan of Arctic Wedge Mid Boots' ,price: 240.00}
-	];		
-	
+	];
+
 	//array shuffle function
 	function shuffle(o) {
     	for(var j, x, i =data.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -80,9 +80,9 @@ $(function(){
 
  //post product to page to showcase
 	var postItAll = function(num){
-		showcase.append('<img src="'+data[num].photo+'">');
+		showcase.append('<img class="img-responsive" src="'+data[num].photo+'">');
 		prodTitle.append('<p>'+data[num].desc+'</p>');
-		reveal.append('<p>$'+data[num].price+'</p>');
+		reveal.append('<p id="prod-price">$'+data[num].price+'</p>');
 	};
 	//reset site for another play
 	var play = function(){
@@ -118,21 +118,21 @@ $(function(){
 		}
 	};
 
-	//determine winner and post 
+	//determine winner and post
 	var winner = function(score1,score2){
 		if(score1 === 10){
-				swal({   title: 'Player 1 is the winner!',   
-				text: "Thank you for playing and don't forget to spay and neuter your pets!",   
+				swal({   title: 'Player 1 is the winner!',
+				text: "Thank you for playing and don't forget to spay and neuter your pets!",
 				imageUrl: "http://i.imgur.com/f4FjyRR.jpg",
 				imageSize: "200x200"});
 		} else if (score2 === 10){
-				swal({   title: 'Player 2 is the winner!',   
-				text: "Thank you for playing and don't forget to spay and neuter your pets!",   
+				swal({   title: 'Player 2 is the winner!',
+				text: "Thank you for playing and don't forget to spay and neuter your pets!",
 				imageUrl: "http://i.imgur.com/f4FjyRR.jpg",
 				imageSize: "200x200"});
 		} else{
 			return;
-		}	
+		}
 	};
 
 	//rflash through colors in reveal
@@ -146,11 +146,11 @@ $(function(){
 	$(newGame).on('click',function(e){
 		e.preventDefault();
 		play();
-		
-	}); 
+
+	});
 
 
-	
+
 // 	//take and eval player inputs, assign point to round winner
 	$('#swap').on('click', '#go-button', function(e){
 		e.preventDefault();
