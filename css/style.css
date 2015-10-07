@@ -18,6 +18,7 @@ body{
 	color: #6F6F6F;
 }
 .score{
+	position: center center;
 	text-align: center;
 	color: #C1111A;
 	padding-bottom: 15px;
@@ -42,6 +43,7 @@ body{
 	border-radius: 40px;
 	border: solid 5px #C1111A;
 	font-size: 30px;
+	overflow: hidden;
 }
 #product-name{
 	color: #F35900;
@@ -51,15 +53,18 @@ body{
 	text-align: center;
 }
 #product-image{
-	height: 330px;
 	border-radius: 20px;
 	text-align: center;
 
 }
 #opening-image{
+	position: relative;
 	text-align: center;
-	border-radius: 40px;
-	margin-left: -10px;
+	margin-bottom: 10px;
+	margin-left: 7%;
+	margin-right: 7%;
+	position: center;
+	border-radius: 20px;
 }
 #reveal{
 	background-color: #FFF900;
@@ -78,11 +83,23 @@ body{
 	font-size: 45px;
 	text-align: left;
 }
+
 #player-input{
+	display: inline-block;
 	position: relative;
 	margin-top: 20px;
-	
 }
 button{
 	border: none;
+}
+/*  footer styles  */
+.footer{
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #6F6F6F;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
 }
